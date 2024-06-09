@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="list-group">
+                {% for theme in themes%}
+                <form method="post">
+                    <input type="submit" class="list-group-item list-group-item-action" name="btn" value="{{ theme.title }}">
+                </form>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title text-center">{{theory.name}}</h4>
+                    <p class="card-text">{{theory.theory}}</p>
+                    <div class="text-center">
+                        <img src="{{ url_for('static', filename='img/' + theory.en_name + '.png') }}" alt="ну емае((">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

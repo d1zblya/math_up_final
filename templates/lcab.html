@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h3 class="text-center my-3">Личные Данные</h3>
+    <ul class="list-group">
+        <!-- Все следующие преременные достать из БД и Объявить в коде!!! -->
+        <!-- Вместо (ПОЧТА) - заменить на {{ user_email }} -->
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-2">
+                    <p>Эл. почта:</p>
+                </div>
+                <div class="col-8 text-center">
+                    <p>{{ user.email }}</p>
+                </div>
+            </div>
+
+        </li>
+        <!-- Вместо (ПАРОЛЬ) - заменить на {{ user_password }} -->
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-2">
+                    <p>Пароль:</p>
+                </div>
+                <div class="col-8 text-center">
+                    <p>******</p>
+                </div>
+                <div class="col-2 text-center">
+                    <a href="/passwordreset" id="but_reset_password">Смена пароля</a>
+                </div>
+            </div>
+        </li>
+        <!-- Вместо (Имя) - заменить на {{ user_name }} -->
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-2">
+                    <p>Имя:</p>
+                </div>
+                <div class="col-8 text-center">
+                    <p>{{ user.name }}</p>
+                </div>
+            </div>
+        </li>
+        <!-- Вместо (Имя) - заменить на {{ user_surname }} -->
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-2">
+                    <p>Фамилия:</p>
+                </div>
+                <div class="col-8 text-center">
+                    <p>{{ user.surname }}</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <h3 class="text-center my-3">Статистика</h3>
+
+    <ul class="list-group">
+        <!-- Вместо (Количество) - заменить на {{ user_count_tasks }} -->
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-2">
+                    <p>Выполнено заданий:</p>
+                </div>
+                <div class="col-8 text-center">
+                    <p>{{ user.user_count_tasks }}</p>
+                </div>
+            </div>
+        </li>
+        <!-- Вместо (Количество) - заменить на {{ user_count_correctly }} -->
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-2">
+                    <p>Решено верно:</p>
+                </div>
+                <div class="col-8 text-center">
+                    <p>{{ user.user_count_correctly }}</p>
+                </div>
+            </div>
+        </li>
+        <!-- Вместо (%) - заменить на {{ user_percent_execution }} -->
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-2">
+                    <p>Процент выполнения:</p>
+                </div>
+                <div class="col-8 text-center">
+                    {% if user.user_count_tasks == 0 %}
+                    <p>0%</p>
+                    {% else %}
+                    <p class="text-center">{{ round((user.user_count_correctly / user.user_count_tasks) * 100) }}%</p>
+                    {% endif %}
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-2">
+                    <p>Рейтинг:</p>
+                </div>
+                <div class="col-8 text-center">
+                    <p>{{ user.rating }}</p>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+    <h3 class="text-center my-3">Список друзей (в разработке)</h3>
+    <div class="mx-4">
+        <!-- ## После связки с кодом и БД убрать от СЮДА ## -->
+        <!-- Пример использования заполнения друзей через список друзей конкретного пользователя -->
+        <!-- Список друзей, хранится у каждого пользователя в своем хранилище в БД -->
+        {% set user_friend_list = ['Егор', 'Ваня', 'Саша', 'Гриша'] %}
+
+        <!-- Словарь со списками статистик всех пользователей, хранится в общем хранилище в БД -->
+        {% set user_stats = {'Егор':[50, 24], 'Ваня':[58, 100], 'Саша':[11, 160], 'Гриша':[70, 38]} %}
+        <!-- ## После связки с кодом и БД и ДО СЮДА ## -->
+
+        {% for user_friend in user_friend_list %}
+        <b>{{ user_friend }}</b>
+        <div class="row">
+            <div class="col">Процент выполнения друга: {{ user_stats[user_friend][0] }}%</div>
+            <div class="col">Выполнено заданий у друга: {{ user_stats[user_friend][1] }}</div>
+        </div>
+        {% endfor %}
+        <a href="/addfriend" id="but_addfriend" class="btn btn-outline-primary my-2">Добавить друга</a>
+    </div>
+</div>
+{% endblock %}

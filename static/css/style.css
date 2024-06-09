@@ -1,0 +1,225 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+main {
+    padding-bottom: 300px;
+}
+.btn {
+    border-radius: 100px;
+}
+.back {
+    background-image: url('../img/background.png');
+    height: 95vh;
+    background-position: center center;
+    background-size: cover;
+}
+.quote {
+    height: 90%;
+}
+.display-4 {
+    color: #6171F9;
+}
+.card {
+    border-radius: 15px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0318D3;
+    border-color: #0318D3;
+}
+.btn-outline-primary {
+    color: #0318D3;
+    border-color: #0318D3;
+}
+.btn-primary:hover {
+    background-color: #122faa;
+}
+.btn-outline-primary:hover {
+    background-color: #0318D3;
+}
+.info-text {
+    font-size: 1.4rem;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #122faa;
+    color: #D3D3D3;
+}
+footer .nav-link {
+    color: #D3D3D3;
+    text-decoration: none;
+}
+.logout {
+    color: #FF0000;
+    opacity: 0.75;
+}
+
+.lcab {
+    color: #1183eddd;
+}
+
+.advantages {
+    font-size: 1.4rem;
+}
+.marker {
+    color: 6171F9;
+    margin: 10px;
+}
+.theme {
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    border-radius: 100px;
+    padding: 5px;
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.125);
+        transition: 0.5s;
+    }
+}
+.list-group {
+    border-radius: 15px;
+}
+.downfall {
+    display: table-cell;
+    vertical-align: middle;
+}
+.timer {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.form-horizontal{
+ background: #fff;
+ padding-bottom: 40px;
+ border-radius: 15px;
+ text-align: center;
+}
+.form-horizontal .heading{
+ display: block;
+ font-size: 35px;
+ font-weight: 700;
+ padding: 10px;
+}
+.form-horizontal .form-group{
+ padding: 0 40px;
+ margin: 0 0 25px 0;
+ position: relative;
+}
+.form-horizontal .form-control{
+ background: #f0f0f0;
+ border: none;
+ border-radius: 20px;
+ box-shadow: none;
+ padding: 0 20px 0 45px;
+ height: 40px;
+ transition: all 0.3s ease 0s;
+}
+.form-horizontal .form-control:focus{
+ background: #e0e0e0;
+ box-shadow: none;
+ outline: 0 none;
+}
+.form-horizontal .form-group i{
+ position: absolute;
+ top: 12px;
+ left: 60px;
+ font-size: 17px;
+ color: #c8c8c8;
+ transition : all 0.5s ease 0s;
+}
+.form-horizontal .form-control:focus + i{
+ color: #00b4ef;
+}
+.form-horizontal .fa-question-circle{
+ display: inline-block;
+ position: absolute;
+ top: 12px;
+ right: 60px;
+ font-size: 20px;
+ color: #808080;
+ transition: all 0.5s ease 0s;
+}
+.form-horizontal .fa-question-circle:hover{
+ color: #000;
+}
+.form-horizontal .main-checkbox{
+ float: left;
+ width: 20px;
+ height: 20px;
+ background: #11a3fc;
+ border-radius: 50%;
+ position: relative;
+ margin: 5px 0 0 5px;
+ border: 1px solid #11a3fc;
+}
+.form-horizontal .main-checkbox label{
+ width: 20px;
+ height: 20px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ cursor: pointer;
+}
+.form-horizontal .main-checkbox label:after{
+ content: "";
+ width: 10px;
+ height: 5px;
+ position: absolute;
+ top: 5px;
+ left: 4px;
+ border: 3px solid #fff;
+ border-top: none;
+ border-right: none;
+ background: transparent;
+ opacity: 0;
+ -webkit-transform: rotate(-45deg);
+ transform: rotate(-45deg);
+}
+.form-horizontal .main-checkbox input[type=checkbox]{
+ visibility: hidden;
+}
+.form-horizontal .main-checkbox input[type=checkbox]:checked + label:after{
+ opacity: 1;
+}
+.form-horizontal .text{
+ float: left;
+ margin-left: 7px;
+ line-height: 20px;
+ padding-top: 5px;
+ text-transform: capitalize;
+}
+.form-horizontal .btn{
+    float: right;
+    padding: 10px 25px;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.5s ease 0s;
+    border-radius: 118px;
+    background: #0318D3;
+    border: 1.5px solid #0318D3;
+    color: #fff;
+    &:hover {
+        color: #fff;
+        background: #122faa;
+        border: 1.5px solid #122faa;
+    }
+}
+
+.stats_header {
+    padding: 20px 0;
+}
+
+.stat_charact {
+    padding: 10px 0;
+}
+
+#but_reset_password {
+    color: red;
+    text-decoration: none;
+}
+
+#but_addfriend {
+    text-decoration: none;
+}

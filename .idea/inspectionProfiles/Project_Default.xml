@@ -1,0 +1,157 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="img" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="10">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="img" />
+            <item index="7" class="java.lang.String" itemvalue="btn" />
+            <item index="8" class="java.lang.String" itemvalue="li" />
+            <item index="9" class="java.lang.String" itemvalue="div" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="94">
+            <item index="0" class="java.lang.String" itemvalue="httpx" />
+            <item index="1" class="java.lang.String" itemvalue="qt5-applications" />
+            <item index="2" class="java.lang.String" itemvalue="protobuf" />
+            <item index="3" class="java.lang.String" itemvalue="tzlocal" />
+            <item index="4" class="java.lang.String" itemvalue="greenlet" />
+            <item index="5" class="java.lang.String" itemvalue="pygame" />
+            <item index="6" class="java.lang.String" itemvalue="huggingface-hub" />
+            <item index="7" class="java.lang.String" itemvalue="yarg" />
+            <item index="8" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="9" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="10" class="java.lang.String" itemvalue="pygame-widgets" />
+            <item index="11" class="java.lang.String" itemvalue="python-dotenv" />
+            <item index="12" class="java.lang.String" itemvalue="qt5-tools" />
+            <item index="13" class="java.lang.String" itemvalue="h11" />
+            <item index="14" class="java.lang.String" itemvalue="PyQt5-sip" />
+            <item index="15" class="java.lang.String" itemvalue="MarkupSafe" />
+            <item index="16" class="java.lang.String" itemvalue="pycparser" />
+            <item index="17" class="java.lang.String" itemvalue="rfc3986" />
+            <item index="18" class="java.lang.String" itemvalue="frozenlist" />
+            <item index="19" class="java.lang.String" itemvalue="PyQt5-Qt5" />
+            <item index="20" class="java.lang.String" itemvalue="docopt" />
+            <item index="21" class="java.lang.String" itemvalue="filelock" />
+            <item index="22" class="java.lang.String" itemvalue="PyQt5" />
+            <item index="23" class="java.lang.String" itemvalue="certifi" />
+            <item index="24" class="java.lang.String" itemvalue="soupsieve" />
+            <item index="25" class="java.lang.String" itemvalue="gevent" />
+            <item index="26" class="java.lang.String" itemvalue="uvicorn" />
+            <item index="27" class="java.lang.String" itemvalue="pyparsing" />
+            <item index="28" class="java.lang.String" itemvalue="googletrans-temp" />
+            <item index="29" class="java.lang.String" itemvalue="auto-py-to-exe" />
+            <item index="30" class="java.lang.String" itemvalue="beautifulsoup4" />
+            <item index="31" class="java.lang.String" itemvalue="tokenizers" />
+            <item index="32" class="java.lang.String" itemvalue="transformers" />
+            <item index="33" class="java.lang.String" itemvalue="Werkzeug" />
+            <item index="34" class="java.lang.String" itemvalue="zope.interface" />
+            <item index="35" class="java.lang.String" itemvalue="python-telegram-bot-calendar" />
+            <item index="36" class="java.lang.String" itemvalue="click" />
+            <item index="37" class="java.lang.String" itemvalue="Eel" />
+            <item index="38" class="java.lang.String" itemvalue="pefile" />
+            <item index="39" class="java.lang.String" itemvalue="pyinstaller-hooks-contrib" />
+            <item index="40" class="java.lang.String" itemvalue="regex" />
+            <item index="41" class="java.lang.String" itemvalue="pyqtgraph" />
+            <item index="42" class="java.lang.String" itemvalue="platformdirs" />
+            <item index="43" class="java.lang.String" itemvalue="vk" />
+            <item index="44" class="java.lang.String" itemvalue="charset-normalizer" />
+            <item index="45" class="java.lang.String" itemvalue="googletrans" />
+            <item index="46" class="java.lang.String" itemvalue="bottle-websocket" />
+            <item index="47" class="java.lang.String" itemvalue="httpcore" />
+            <item index="48" class="java.lang.String" itemvalue="idna" />
+            <item index="49" class="java.lang.String" itemvalue="pathspec" />
+            <item index="50" class="java.lang.String" itemvalue="SQLAlchemy" />
+            <item index="51" class="java.lang.String" itemvalue="cffi" />
+            <item index="52" class="java.lang.String" itemvalue="mypy-extensions" />
+            <item index="53" class="java.lang.String" itemvalue="Flask-Navigation" />
+            <item index="54" class="java.lang.String" itemvalue="h2" />
+            <item index="55" class="java.lang.String" itemvalue="bottle" />
+            <item index="56" class="java.lang.String" itemvalue="numpy" />
+            <item index="57" class="java.lang.String" itemvalue="requests" />
+            <item index="58" class="java.lang.String" itemvalue="importlib-metadata" />
+            <item index="59" class="java.lang.String" itemvalue="sniffio" />
+            <item index="60" class="java.lang.String" itemvalue="mysql-connector-python" />
+            <item index="61" class="java.lang.String" itemvalue="gevent-websocket" />
+            <item index="62" class="java.lang.String" itemvalue="greenletio" />
+            <item index="63" class="java.lang.String" itemvalue="whichcraft" />
+            <item index="64" class="java.lang.String" itemvalue="zipp" />
+            <item index="65" class="java.lang.String" itemvalue="pywin32-ctypes" />
+            <item index="66" class="java.lang.String" itemvalue="vk-api" />
+            <item index="67" class="java.lang.String" itemvalue="tomli" />
+            <item index="68" class="java.lang.String" itemvalue="pyqt5-tools" />
+            <item index="69" class="java.lang.String" itemvalue="urllib3" />
+            <item index="70" class="java.lang.String" itemvalue="wikipedia" />
+            <item index="71" class="java.lang.String" itemvalue="zope.event" />
+            <item index="72" class="java.lang.String" itemvalue="Flask" />
+            <item index="73" class="java.lang.String" itemvalue="pyinstaller" />
+            <item index="74" class="java.lang.String" itemvalue="hyperframe" />
+            <item index="75" class="java.lang.String" itemvalue="magic-filter" />
+            <item index="76" class="java.lang.String" itemvalue="pyTelegramBotAPI" />
+            <item index="77" class="java.lang.String" itemvalue="black" />
+            <item index="78" class="java.lang.String" itemvalue="tzdata" />
+            <item index="79" class="java.lang.String" itemvalue="packaging" />
+            <item index="80" class="java.lang.String" itemvalue="pipreqs" />
+            <item index="81" class="java.lang.String" itemvalue="telebot-calendar" />
+            <item index="82" class="java.lang.String" itemvalue="hstspreload" />
+            <item index="83" class="java.lang.String" itemvalue="hpack" />
+            <item index="84" class="java.lang.String" itemvalue="pytz-deprecation-shim" />
+            <item index="85" class="java.lang.String" itemvalue="chardet" />
+            <item index="86" class="java.lang.String" itemvalue="tqdm" />
+            <item index="87" class="java.lang.String" itemvalue="schedule" />
+            <item index="88" class="java.lang.String" itemvalue="future" />
+            <item index="89" class="java.lang.String" itemvalue="pyqt5-plugins" />
+            <item index="90" class="java.lang.String" itemvalue="typing_extensions" />
+            <item index="91" class="java.lang.String" itemvalue="yarl" />
+            <item index="92" class="java.lang.String" itemvalue="pytz" />
+            <item index="93" class="java.lang.String" itemvalue="Pillow" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="main.Playlist.*" />
+          <option value="main.Playlist.playlist" />
+          <option value="main.MainWindow.playlist" />
+          <option value="main.MainWindow.*" />
+          <option value="app1.data.news" />
+          <option value="app1.forms" />
+          <option value="vk_api" />
+          <option value="forms.user.flask_wtf" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="back text-center">
+    <img class="quote my-5" src="{{ url_for('static', filename='img/quote.png') }}" alt="картинку украли">
+</div>
+<div class="container-lg">
+    <div class="info text-center">
+        <h2 class="gr-pill my-4 display-4">О проекте</h2>
+        <div class="row">
+            <div class="col">
+                <div class="card h-100 mx-3">
+                    <div class="card-body">
+                        <p class="card-text info-text"><b>Math Up</b> - это интерактивный онлайн проект, который поможет вам улучшить свои знания по математике, ускорить решение задач и расширить навыки.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 mx-3">
+                    <div class="card-body">
+                        <p class="card-text info-text">С помощью игр, задач и квествов вы сможете быстро и легко освоить различные математические концепции, повысить скорость решения задач и улучшить навыки анализа и логического мышления.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 mx-3">
+                    <div class="card-body">
+                        <p class="card-text info-text">Независимо от вашего уровня подготовки, <b>Math Up</b> поможет вам стать более уверенным в математике и достичь новых успехов в учебе и работе.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="text-center gr-pill my-4 display-4">Наши преимущества</h2>
+        <ul class="advantages">
+            <li class="marker">Возможность учить математику в увлекательной форме</li>
+            <li class="marker">Различные задания и уровни сложности</li>
+            <li class="marker">Развивает логическое мышление и умение решать задачи</li>
+            <li class="marker">Доступен для использования на любом устройстве</li>
+            <li class="marker">Персонализированный подход к обучению</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

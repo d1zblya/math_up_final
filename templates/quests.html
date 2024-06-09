@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ul class="nav nav-tabs justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link" href="/quests/speed/{{dif}}">По таймеру</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/quests/count/{{dif}}">На количество</a>
+    </li>
+</ul>
+<div class="container">
+    <div class="d-flex justify-content-center">
+        <h2 class="timer display-5" id="countdown">60</h2>
+        <h2 class="my-3">Решено примеров: <span id="count">0</span></h2>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <!-- <p class="card-text p-3">{{ example }}</p> -->
+                    <img src="/static/img/problem.png" alt="Пример">
+                </div>
+                <div class="card-footer">
+                    <form method="post">
+                        <div class="row p-1">
+                            <div class="col-4">
+                                {% if answer %}
+                                    {% if answer[1] %}
+                                    <input type="text" value='{{ answer[2] }}' style='background: rgba(0, 255, 0, 0.4);' id="ans" class="form-control" name="ans">
+                                    {% else %}
+                                    <input type="text" value='{{ answer[2] }}' style='background: rgba(255, 0, 0, 0.4);' id="ans" class="form-control" name="ans">
+                                    {% endif %}
+                                    <label for="ans">{{ answer[0] }}</label>
+                                {% else %}
+                                <input type="text" id="ans" class="form-control" name="ans">
+                                {% endif %}
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="submit" class="form-control btn btn-primary" value="Ответить">
+                                    </div>
+                                    <div class="col p-0">
+                                        <a href="/quests/{{type}}" type="button" class="btn btn-outline-primary">Дальше</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+let time = 59;
+const timer = setInterval(() => {
+  document.getElementById('countdown').textContent = time <= 0
+    ? clearInterval(timer) // Останавливаем таймер, поскольку время истекло
+    : time--; // С каждой секундой уменьшаем время
+}, 1000); // Интервал делаем одной секунды
+</script>
+{% endblock %}

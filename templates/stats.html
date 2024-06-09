@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <header class="stats_header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">Статистика пользователей</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="stat_charact">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center">Топ 10 по рейтингу</h3>
+            </div>
+        </div>
+    </div>
+
+    <!--  Пример заполнения  -->
+    <!--  Список с именами первых топ 10 пользователей  -->
+    {% set top_score_users_names = ['заглушка', 'Егор', 'Ваня', 'Саша', 'Гриша', 'Саша', 'Дима', 'Леша', 'Никита', 'Андрей', 'Богдан'] %}
+    <!--  Список с фамилиями первых топ 10 пользователей  -->
+    {% set top_score_users_surnames = ['заглушка', 'Софронов', 'Кузнецов', 'Ермаков', 'Попов', 'Власов', 'Блохин', 'Калашников', 'Юдин', 'Архипов', 'Кравцов'] %}
+    <!--  Список со счетом очков первых топ 10 пользователей  -->
+    {% set top_score_users_value = ['заглушка', 100021, 53043, 30000, 20400, 14500, 10532, 8042, 7646, 5252, 5200] %}
+
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-4 text-center"><h5>Имя:</h5></div>
+        <div class="col-4 text-center"><h5>Фамилия:</h5></div>
+        <div class="col-3 text-center"><h5>Набранные очки:</h5></div>
+    </div>
+
+    {% for user in top_users_by_rating %}
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-1"><b>{{ loop.index }}</b></div>
+                <div class="col-4 text-center"><b>{{ user.name }}</b></div>
+                <div class="col-4 text-center"><b>{{ user.surname }}</b></div>
+                <div class="col-3 text-center">{{ user.rating }}</div>
+            </div>
+        </li>
+    </ol>
+    {% endfor %}
+
+    <div class="stat_charact">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center">Топ 10 по решенным заданиям</h3>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-4 text-center"><h5>Имя:</h5></div>
+        <div class="col-4 text-center"><h5>Фамилия:</h5></div>
+        <div class="col-3 text-center"><h5>Решено верно:</h5></div>
+    </div>
+
+    <!--  Пример заполнения  -->
+    <!--  Список с именами первых топ 10 пользователей  -->
+    <!--  {% set top_resolved_users_names = ['заглушка', 'Егор', 'Ваня', 'Саша', 'Гриша', 'Саша', 'Дима', 'Леша', 'Никита', 'Андрей', 'Богдан'] %}  -->
+    <!--  Список с фамилиями первых топ 10 пользователей  -->
+    <!--  {% set top_resolved_users_surnames = ['заглушка', 'Софронов', 'Кузнецов', 'Ермаков', 'Попов', 'Власов', 'Блохин', 'Калашников', 'Юдин', 'Архипов', 'Кравцов'] %}  -->
+    <!--  Список со счетом первых топ 10 пользователей  -->
+    <!--  {% set top_resolved_users_value = ['заглушка', 1028, 534, 433, 367, 333, 301, 288, 251, 231, 202] %}  -->
+
+    {% for user in top_users_by_answers %}
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-1"><b>{{ loop.index }}</b></div>
+                <div class="col-4 text-center"><b>{{ user.name }}</b></div>
+                <div class="col-4 text-center"><b>{{ user.surname }}</b></div>
+                <div class="col-3 text-center">{{ user.user_count_correctly }}</div>
+            </div>
+        </li>
+    </ol>
+    {% endfor %}
+</div>
+
+{% endblock %}
